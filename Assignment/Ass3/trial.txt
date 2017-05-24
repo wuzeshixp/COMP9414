@@ -1,0 +1,250 @@
+?- agent_trial.
+Cycle 0:
+    Event: restaurant value 9 appears at (1,6)
+    Event: truffle value 7 appears at (3,8)
+    World: [truffle(3,8,7),restaurant(1,6,9)]
+    Beliefs: beliefs(at(5,5),stock(0))
+    Percepts: [truffle(3,8,7),restaurant(1,6,9)]
+    Goals: goals([goal(1,6,9)],[goal(3,8,7)])
+    Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[]]])
+    New Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[move(3,5),move(3,6),move(3,7),move(3,8),pick(3,8)]]])
+    Action: move(4,5) scores 0
+    Updated World: [truffle(3,8,7),restaurant(1,6,9)]
+    Observation: at(4,5)
+    Updated Beliefs: beliefs(at(4,5),stock(0))
+    Updated Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[move(3,5),move(3,6),move(3,7),move(3,8),pick(3,8)]]])
+Cycle 1:
+    World: [truffle(3,8,7),restaurant(1,6,9)]
+    Beliefs: beliefs(at(4,5),stock(0))
+    Percepts: [truffle(3,8,7),restaurant(1,6,9)]
+    Goals: goals([goal(1,6,9)],[goal(3,8,7)])
+    Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[move(3,5),move(3,6),move(3,7),move(3,8),pick(3,8)]]])
+    New Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[move(3,6),move(3,7),move(3,8),pick(3,8)]]])
+    Action: move(3,5) scores 0
+    Updated World: [truffle(3,8,7),restaurant(1,6,9)]
+    Observation: at(3,5)
+    Updated Beliefs: beliefs(at(3,5),stock(0))
+    Updated Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[move(3,6),move(3,7),move(3,8),pick(3,8)]]])
+Cycle 2:
+    Event: truffle value 9 appears at (8,0)
+    World: [truffle(3,8,7),truffle(8,0,9),restaurant(1,6,9)]
+    Beliefs: beliefs(at(3,5),stock(0))
+    Percepts: [truffle(3,8,7),restaurant(1,6,9)]
+    Goals: goals([goal(1,6,9)],[goal(3,8,7)])
+    Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[move(3,6),move(3,7),move(3,8),pick(3,8)]]])
+    New Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[move(3,7),move(3,8),pick(3,8)]]])
+    Action: move(3,6) scores 0
+    Updated World: [truffle(3,8,7),truffle(8,0,9),restaurant(1,6,9)]
+    Observation: at(3,6)
+    Updated Beliefs: beliefs(at(3,6),stock(0))
+    Updated Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[move(3,7),move(3,8),pick(3,8)]]])
+Cycle 3:
+    Event: truffle value 7 appears at (0,8)
+    World: [truffle(3,8,7),truffle(8,0,9),truffle(0,8,7),restaurant(1,6,9)]
+    Beliefs: beliefs(at(3,6),stock(0))
+    Percepts: [truffle(3,8,7),truffle(0,8,7),restaurant(1,6,9)]
+    Goals: goals([goal(1,6,9)],[goal(3,8,7),goal(0,8,7)])
+    Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[move(3,7),move(3,8),pick(3,8)]],[goal(0,8,7),[]]])
+    New Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[move(3,8),pick(3,8)]],[goal(0,8,7),[]]])
+    Action: move(3,7) scores 0
+    Updated World: [truffle(3,8,7),truffle(8,0,9),truffle(0,8,7),restaurant(1,6,9)]
+    Observation: at(3,7)
+    Updated Beliefs: beliefs(at(3,7),stock(0))
+    Updated Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[move(3,8),pick(3,8)]],[goal(0,8,7),[]]])
+Cycle 4:
+    World: [truffle(3,8,7),truffle(8,0,9),truffle(0,8,7),restaurant(1,6,9)]
+    Beliefs: beliefs(at(3,7),stock(0))
+    Percepts: [truffle(3,8,7),truffle(0,8,7),restaurant(1,6,9)]
+    Goals: goals([goal(1,6,9)],[goal(3,8,7),goal(0,8,7)])
+    Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[move(3,8),pick(3,8)]],[goal(0,8,7),[]]])
+    New Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[pick(3,8)]],[goal(0,8,7),[]]])
+    Action: move(3,8) scores 0
+    Updated World: [truffle(3,8,7),truffle(8,0,9),truffle(0,8,7),restaurant(1,6,9)]
+    Observation: at(3,8)
+    Updated Beliefs: beliefs(at(3,8),stock(0))
+    Updated Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[pick(3,8)]],[goal(0,8,7),[]]])
+Cycle 5:
+    World: [truffle(3,8,7),truffle(8,0,9),truffle(0,8,7),restaurant(1,6,9)]
+    Beliefs: beliefs(at(3,8),stock(0))
+    Percepts: [truffle(3,8,7),truffle(0,8,7),restaurant(1,6,9)]
+    Goals: goals([goal(1,6,9)],[goal(3,8,7),goal(0,8,7)])
+    Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[pick(3,8)]],[goal(0,8,7),[]]])
+    New Intentions: intents([[goal(1,6,9),[]]],[[goal(3,8,7),[]],[goal(0,8,7),[]]])
+    Action: pick(3,8) scores 0
+    Updated World: [truffle(8,0,9),truffle(0,8,7),restaurant(1,6,9)]
+    Observation: picked(3,8,7)
+    Updated Beliefs: beliefs(at(3,8),stock(7))
+    Updated Intentions: intents([[goal(1,6,9),[]]],[[goal(0,8,7),[]]])
+Cycle 6:
+    Event: restaurant value 0 appears at (3,1)
+    World: [truffle(8,0,9),truffle(0,8,7),restaurant(1,6,9),restaurant(3,1,0)]
+    Beliefs: beliefs(at(3,8),stock(7))
+    Percepts: [truffle(0,8,7),restaurant(1,6,9),restaurant(3,1,0)]
+    Goals: goals([goal(1,6,9),goal(3,1,0)],[goal(0,8,7)])
+    Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[[goal(0,8,7),[]]])
+    New Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[[goal(0,8,7),[move(1,8),move(0,8),pick(0,8)]]])
+    Action: move(2,8) scores 0
+    Updated World: [truffle(8,0,9),truffle(0,8,7),restaurant(1,6,9),restaurant(3,1,0)]
+    Observation: at(2,8)
+    Updated Beliefs: beliefs(at(2,8),stock(7))
+    Updated Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[[goal(0,8,7),[move(1,8),move(0,8),pick(0,8)]]])
+Cycle 7:
+    World: [truffle(8,0,9),truffle(0,8,7),restaurant(1,6,9),restaurant(3,1,0)]
+    Beliefs: beliefs(at(2,8),stock(7))
+    Percepts: [truffle(0,8,7),restaurant(1,6,9),restaurant(3,1,0)]
+    Goals: goals([goal(1,6,9),goal(3,1,0)],[goal(0,8,7)])
+    Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[[goal(0,8,7),[move(1,8),move(0,8),pick(0,8)]]])
+    New Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[[goal(0,8,7),[move(0,8),pick(0,8)]]])
+    Action: move(1,8) scores 0
+    Updated World: [truffle(8,0,9),truffle(0,8,7),restaurant(1,6,9),restaurant(3,1,0)]
+    Observation: at(1,8)
+    Updated Beliefs: beliefs(at(1,8),stock(7))
+    Updated Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[[goal(0,8,7),[move(0,8),pick(0,8)]]])
+Cycle 8:
+    World: [truffle(8,0,9),truffle(0,8,7),restaurant(1,6,9),restaurant(3,1,0)]
+    Beliefs: beliefs(at(1,8),stock(7))
+    Percepts: [truffle(0,8,7),restaurant(1,6,9),restaurant(3,1,0)]
+    Goals: goals([goal(1,6,9),goal(3,1,0)],[goal(0,8,7)])
+    Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[[goal(0,8,7),[move(0,8),pick(0,8)]]])
+    New Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[[goal(0,8,7),[pick(0,8)]]])
+    Action: move(0,8) scores 0
+    Updated World: [truffle(8,0,9),truffle(0,8,7),restaurant(1,6,9),restaurant(3,1,0)]
+    Observation: at(0,8)
+    Updated Beliefs: beliefs(at(0,8),stock(7))
+    Updated Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[[goal(0,8,7),[pick(0,8)]]])
+Cycle 9:
+    World: [truffle(8,0,9),truffle(0,8,7),restaurant(1,6,9),restaurant(3,1,0)]
+    Beliefs: beliefs(at(0,8),stock(7))
+    Percepts: [truffle(0,8,7),restaurant(1,6,9)]
+    Goals: goals([goal(1,6,9)],[goal(0,8,7)])
+    Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[[goal(0,8,7),[pick(0,8)]]])
+    New Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[[goal(0,8,7),[]]])
+    Action: pick(0,8) scores 0
+    Updated World: [truffle(8,0,9),restaurant(1,6,9),restaurant(3,1,0)]
+    Observation: picked(0,8,7)
+    Updated Beliefs: beliefs(at(0,8),stock(14))
+    Updated Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[])
+Cycle 10:
+    World: [truffle(8,0,9),restaurant(1,6,9),restaurant(3,1,0)]
+    Beliefs: beliefs(at(0,8),stock(14))
+    Percepts: [restaurant(1,6,9)]
+    Goals: goals([goal(1,6,9)],[])
+    Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[])
+    New Intentions: intents([[goal(1,6,9),[move(1,7),move(1,6),sell(1,6)]],[goal(3,1,0),[]]],[])
+    Action: move(1,8) scores 0
+    Updated World: [truffle(8,0,9),restaurant(1,6,9),restaurant(3,1,0)]
+    Observation: at(1,8)
+    Updated Beliefs: beliefs(at(1,8),stock(14))
+    Updated Intentions: intents([[goal(1,6,9),[move(1,7),move(1,6),sell(1,6)]],[goal(3,1,0),[]]],[])
+Cycle 11:
+    World: [truffle(8,0,9),restaurant(1,6,9),restaurant(3,1,0)]
+    Beliefs: beliefs(at(1,8),stock(14))
+    Percepts: [restaurant(1,6,9),restaurant(3,1,0)]
+    Goals: goals([goal(1,6,9),goal(3,1,0)],[])
+    Intentions: intents([[goal(1,6,9),[move(1,7),move(1,6),sell(1,6)]],[goal(3,1,0),[]]],[])
+    New Intentions: intents([[goal(1,6,9),[move(1,6),sell(1,6)]],[goal(3,1,0),[]]],[])
+    Action: move(1,7) scores 0
+    Updated World: [truffle(8,0,9),restaurant(1,6,9),restaurant(3,1,0)]
+    Observation: at(1,7)
+    Updated Beliefs: beliefs(at(1,7),stock(14))
+    Updated Intentions: intents([[goal(1,6,9),[move(1,6),sell(1,6)]],[goal(3,1,0),[]]],[])
+Cycle 12:
+    World: [truffle(8,0,9),restaurant(1,6,9),restaurant(3,1,0)]
+    Beliefs: beliefs(at(1,7),stock(14))
+    Percepts: [restaurant(1,6,9),restaurant(3,1,0)]
+    Goals: goals([goal(1,6,9),goal(3,1,0)],[])
+    Intentions: intents([[goal(1,6,9),[move(1,6),sell(1,6)]],[goal(3,1,0),[]]],[])
+    New Intentions: intents([[goal(1,6,9),[sell(1,6)]],[goal(3,1,0),[]]],[])
+    Action: move(1,6) scores 0
+    Updated World: [truffle(8,0,9),restaurant(1,6,9),restaurant(3,1,0)]
+    Observation: at(1,6)
+    Updated Beliefs: beliefs(at(1,6),stock(14))
+    Updated Intentions: intents([[goal(1,6,9),[sell(1,6)]],[goal(3,1,0),[]]],[])
+Cycle 13:
+    World: [truffle(8,0,9),restaurant(1,6,9),restaurant(3,1,0)]
+    Beliefs: beliefs(at(1,6),stock(14))
+    Percepts: [restaurant(1,6,9),restaurant(3,1,0)]
+    Goals: goals([goal(1,6,9),goal(3,1,0)],[])
+    Intentions: intents([[goal(1,6,9),[sell(1,6)]],[goal(3,1,0),[]]],[])
+    New Intentions: intents([[goal(1,6,9),[]],[goal(3,1,0),[]]],[])
+    Action: sell(1,6) scores 9
+    Updated World: [truffle(8,0,9),restaurant(3,1,0)]
+    Observation: sold(1,6,9)
+    Updated Beliefs: beliefs(at(1,6),stock(5))
+    Updated Intentions: intents([[goal(3,1,0),[]]],[])
+Cycle 14:
+    World: [truffle(8,0,9),restaurant(3,1,0)]
+    Beliefs: beliefs(at(1,6),stock(5))
+    Percepts: [restaurant(3,1,0)]
+    Goals: goals([goal(3,1,0)],[])
+    Intentions: intents([[goal(3,1,0),[]]],[])
+    New Intentions: intents([[goal(3,1,0),[move(3,6),move(3,5),move(3,4),move(3,3),move(3,2),move(3,1),sell(3,1)]]],[])
+    Action: move(2,6) scores 0
+    Updated World: [truffle(8,0,9),restaurant(3,1,0)]
+    Observation: at(2,6)
+    Updated Beliefs: beliefs(at(2,6),stock(5))
+    Updated Intentions: intents([[goal(3,1,0),[move(3,6),move(3,5),move(3,4),move(3,3),move(3,2),move(3,1),sell(3,1)]]],[])
+Cycle 15:
+    World: [truffle(8,0,9),restaurant(3,1,0)]
+    Beliefs: beliefs(at(2,6),stock(5))
+    Percepts: [restaurant(3,1,0)]
+    Goals: goals([goal(3,1,0)],[])
+    Intentions: intents([[goal(3,1,0),[move(3,6),move(3,5),move(3,4),move(3,3),move(3,2),move(3,1),sell(3,1)]]],[])
+    New Intentions: intents([[goal(3,1,0),[move(3,5),move(3,4),move(3,3),move(3,2),move(3,1),sell(3,1)]]],[])
+    Action: move(3,6) scores 0
+    Updated World: [truffle(8,0,9),restaurant(3,1,0)]
+    Observation: at(3,6)
+    Updated Beliefs: beliefs(at(3,6),stock(5))
+    Updated Intentions: intents([[goal(3,1,0),[move(3,5),move(3,4),move(3,3),move(3,2),move(3,1),sell(3,1)]]],[])
+Cycle 16:
+    Event: truffle value 3 appears at (5,4)
+    World: [truffle(8,0,9),truffle(5,4,3),restaurant(3,1,0)]
+    Beliefs: beliefs(at(3,6),stock(5))
+    Percepts: [truffle(5,4,3),restaurant(3,1,0)]
+    Goals: goals([goal(3,1,0)],[goal(5,4,3)])
+    Intentions: intents([[goal(3,1,0),[move(3,5),move(3,4),move(3,3),move(3,2),move(3,1),sell(3,1)]]],[[goal(5,4,3),[]]])
+    New Intentions: intents([[goal(3,1,0),[move(3,4),move(3,3),move(3,2),move(3,1),sell(3,1)]]],[[goal(5,4,3),[]]])
+    Action: move(3,5) scores 0
+    Updated World: [truffle(8,0,9),truffle(5,4,3),restaurant(3,1,0)]
+    Observation: at(3,5)
+    Updated Beliefs: beliefs(at(3,5),stock(5))
+    Updated Intentions: intents([[goal(3,1,0),[move(3,4),move(3,3),move(3,2),move(3,1),sell(3,1)]]],[[goal(5,4,3),[]]])
+Cycle 17:
+    World: [truffle(8,0,9),truffle(5,4,3),restaurant(3,1,0)]
+    Beliefs: beliefs(at(3,5),stock(5))
+    Percepts: [truffle(5,4,3),restaurant(3,1,0)]
+    Goals: goals([goal(3,1,0)],[goal(5,4,3)])
+    Intentions: intents([[goal(3,1,0),[move(3,4),move(3,3),move(3,2),move(3,1),sell(3,1)]]],[[goal(5,4,3),[]]])
+    New Intentions: intents([[goal(3,1,0),[move(3,3),move(3,2),move(3,1),sell(3,1)]]],[[goal(5,4,3),[]]])
+    Action: move(3,4) scores 0
+    Updated World: [truffle(8,0,9),truffle(5,4,3),restaurant(3,1,0)]
+    Observation: at(3,4)
+    Updated Beliefs: beliefs(at(3,4),stock(5))
+    Updated Intentions: intents([[goal(3,1,0),[move(3,3),move(3,2),move(3,1),sell(3,1)]]],[[goal(5,4,3),[]]])
+Cycle 18:
+    Event: restaurant value 5 appears at (8,6)
+    World: [truffle(8,0,9),truffle(5,4,3),restaurant(3,1,0),restaurant(8,6,5)]
+    Beliefs: beliefs(at(3,4),stock(5))
+    Percepts: [truffle(8,0,9),truffle(5,4,3),restaurant(3,1,0),restaurant(8,6,5)]
+    Goals: goals([goal(3,1,0),goal(8,6,5)],[goal(8,0,9),goal(5,4,3)])
+    Intentions: intents([[goal(8,6,5),[]],[goal(3,1,0),[move(3,3),move(3,2),move(3,1),sell(3,1)]]],[[goal(8,0,9),[]],[goal(5,4,3),[]]])
+    New Intentions: intents([[goal(8,6,5),[move(5,4),move(6,4),move(7,4),move(8,4),move(8,5),move(8,6),sell(8,6)]],[goal(3,1,0),[move(3,3),move(3,2),move(3,1),sell(3,1)]]],[[goal(8,0,9),[]],[goal(5,4,3),[]]])
+    Action: move(4,4) scores 0
+    Updated World: [truffle(8,0,9),truffle(5,4,3),restaurant(3,1,0),restaurant(8,6,5)]
+    Observation: at(4,4)
+    Updated Beliefs: beliefs(at(4,4),stock(5))
+    Updated Intentions: intents([[goal(8,6,5),[move(5,4),move(6,4),move(7,4),move(8,4),move(8,5),move(8,6),sell(8,6)]],[goal(3,1,0),[move(3,3),move(3,2),move(3,1),sell(3,1)]]],[[goal(8,0,9),[]],[goal(5,4,3),[]]])
+Cycle 19:
+    World: [truffle(8,0,9),truffle(5,4,3),restaurant(3,1,0),restaurant(8,6,5)]
+    Beliefs: beliefs(at(4,4),stock(5))
+    Percepts: [truffle(8,0,9),truffle(5,4,3),restaurant(3,1,0),restaurant(8,6,5)]
+    Goals: goals([goal(3,1,0),goal(8,6,5)],[goal(8,0,9),goal(5,4,3)])
+    Intentions: intents([[goal(8,6,5),[move(5,4),move(6,4),move(7,4),move(8,4),move(8,5),move(8,6),sell(8,6)]],[goal(3,1,0),[move(3,3),move(3,2),move(3,1),sell(3,1)]]],[[goal(8,0,9),[]],[goal(5,4,3),[]]]).
+    New Intentions: intents([[goal(8,6,5),[move(6,4),move(7,4),move(8,4),move(8,5),move(8,6),sell(8,6)]],[goal(3,1,0),[move(3,3),move(3,2),move(3,1),sell(3,1)]]],[[goal(8,0,9),[]],[goal(5,4,3),[]]])
+    Action: move(5,4) scores 0
+    Updated World: [truffle(8,0,9),truffle(5,4,3),restaurant(3,1,0),restaurant(8,6,5)]
+    Observation: at(5,4)
+    Updated Beliefs: beliefs(at(5,4),stock(5))
+    Updated Intentions: intents([[goal(8,6,5),[move(6,4),move(7,4),move(8,4),move(8,5),move(8,6),sell(8,6)]],[goal(3,1,0),[move(3,3),move(3,2),move(3,1),sell(3,1)]]],[[goal(8,0,9),[]],[goal(5,4,3),[]]])
+Total score: 9
+true.
